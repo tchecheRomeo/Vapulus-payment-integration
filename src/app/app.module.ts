@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
+import { VapulusSnippetModule  } from 'node_modules/ng-vapulus-snippet'
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {VapulusSnippetModule} from 'ng-vapulus-snippet';
 
 @NgModule({
   declarations: [
@@ -11,11 +10,9 @@ import {VapulusSnippetModule} from 'ng-vapulus-snippet';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     VapulusSnippetModule
   ],
   providers: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
